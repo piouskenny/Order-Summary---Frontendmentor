@@ -13,7 +13,7 @@ body {
 }
 
 body #bg {
-  background-image: url(../images/pattern-background-mobile.svg);
+  background: #e0e8ff;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -24,6 +24,160 @@ body #bg {
 @media (min-width: 400px) {
   body #bg {
     background-image: url(../images/pattern-background-desktop.svg);
+    background-size: contain;
+    width: 100%;
+    height: 100%;
   }
+}
+
+body main #all .content {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+@media (min-width: 400px) {
+  body main #all .content {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+body main #all .content .primary {
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+@media (min-width: 400px) {
+  body main #all .content .primary {
+    margin-top: 4%;
+  }
+}
+
+body main #all .content .primary .hero {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+body main #all .content .primary .main-content {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: #fff;
+  width: 100%;
+  height: 60vh;
+}
+
+@media (min-width: 400px) {
+  body main #all .content .primary .main-content {
+    height: 60vh;
+  }
+}
+
+body main #all .content .primary .main-content .heading {
+  text-align: center;
+  font-weight: 900;
+  padding-top: 6%;
+  color: #1f2f56;
+}
+
+@media (min-width: 400px) {
+  body main #all .content .primary .main-content .heading {
+    padding-top: 10%;
+    font-weight: bolder;
+  }
+}
+
+body main #all .content .primary .main-content .content-text {
+  text-align: center;
+  color: #7280a7;
+  margin-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-weight: 500;
+}
+
+@media (min-width: 400px) {
+  body main #all .content .primary .main-content .content-text {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+
+body main #all .content .primary .main-content .price {
+  background: #f5f7ff;
+  border-radius: 10px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+body main #all .content .primary .main-content .price .price-child {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+body main #all .content .primary .main-content .price .price-child .pricing {
+  line-height: 50%;
+}
+
+body main #all .content .primary .main-content .price .price-child .pricing .text {
+  margin-top: 5%;
+  color: #1f2f56;
+  font-weight: bolder;
+  text-align: center;
+}
+
+body main #all .content .primary .main-content .price .price-child .pricing .amount {
+  color: #7280a7;
+  padding-top: 0;
+  text-align: center;
+}
+
+body main #all .content .primary .main-content .button {
+  margin-top: 7%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+body main #all .content .primary .main-content .button .bttn {
+  background: #3829e0;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  -webkit-box-shadow: 7px 25px 22px 1px #e0e8ff;
+          box-shadow: 7px 25px 22px 1px #e0e8ff;
+}
+
+body main #all .content .primary .main-content .button .bttn:hover {
+  background: #7280a7;
+}
+
+body main #all .content .primary .main-content .cancel {
+  text-align: center;
+  margin-top: 5%;
+  color: #7280a7;
+  font-weight: bold;
+  margin-bottom: 5%;
+  text-decoration: none;
+}
+
+body main #all .content .primary .main-content .cancel:hover {
+  color: #1f2f56;
+}
+
+.link {
+  color: #3829e0;
+  font-weight: bolder;
+}
+
+.link:hover {
+  color: #7280a7;
+}
+
+.order {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
