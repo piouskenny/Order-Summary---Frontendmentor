@@ -1,0 +1,41 @@
+$colors: (
+    Pale-blue: hsl(225, 100%, 94%),
+    Bright-blue: hsl(245, 75%, 52%),
+    Very-pale-blue: hsl(225, 100%, 98%),
+    Desaturated-blue: hsl(224, 23%, 55%),
+    Dark-blue: hsl(223, 47%, 23%)
+);
+
+// Variable
+
+// funnction
+
+@function color($color-name) {
+    @return map-get($colors, $color-name );
+}
+
+
+@font-face {
+    font-family: RedHat;
+    src: url(font.ttf);
+}
+
+body, html {
+    height: 100%;
+}
+
+
+body {
+    font-family: 'RedHat';
+    margin: 0;
+    
+    #bg{
+        background-color: color(Pale-blue);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+
+    }
+}
+
